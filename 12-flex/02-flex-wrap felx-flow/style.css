@@ -1,0 +1,14 @@
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  height: 500px;
+  align-content: stretch; /* при переносе вместо align-items */
+  /* flex-flow: row wrap; сокращение для flex-directin + flex-wrap */
+}
+
+.flex-inner {
+  background-color: olive;
+  width: 200px;
+  /* height: 100px; */
+}

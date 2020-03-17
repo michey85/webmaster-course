@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Slider</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Slider JS</h1>
+        <div class="slider">
+            <div class="slider__container">
+                <img class="slider__image fade" src="./img/html.jpg" alt="slide picture">
+            </div>
+            <div class="slider__controls">
+                <div class="slider__dots">
+                    <span class="slider__dot active" onclick="changeIndex(0)"></span>
+                    <span class="slider__dot" onclick="changeIndex(1)"></span>
+                    <span class="slider__dot" onclick="changeIndex(2)"></span>
+                </div>
+                <button class="slider__nav slider__nav-left" onclick="nextIndex(-1)">&lt;</button>
+                <button class="slider__nav slider__nav-right" onclick="nextIndex(1)">&gt;</button>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+
+</html>

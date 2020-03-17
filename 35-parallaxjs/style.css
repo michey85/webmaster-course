@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+.par {
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(-135deg, #3023ae, #c86dd7);
+  position: relative;
+  overflow: hidden;
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden; */
+}
+.hero__ovals {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero__list li {
+  width: 100%;
+  list-style: none;
+}
+.hero__icon {
+  position: relative;
+  /* width: 100%; */
+}
+.hero__icon.bag {
+  top: 30%;
+  left: 50%;
+}
+.hero__icon.ball {
+  top: 33%;
+  left: 40%;
+}
+
+.hero__icon.hand {
+  top: 33%;
+  left: 60%;
+}
+.hero__icon.like {
+  top: 35%;
+  left: 35%;
+}
+.hero__icon.love {
+  top: 35%;
+  left: 65%;
+}
+.hero__icon.shape {
+  top: 38%;
+  left: 70%;
+}
+
+.hero__icon.ship {
+  top: 38%;
+  left: 30%;
+}
+
+.hero__icon.star {
+  top: 42%;
+  left: 25%;
+}
+.hero__icon.wallet {
+  top: 42%;
+  left: 75%;
+}

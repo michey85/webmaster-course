@@ -1,0 +1,20 @@
+@mixin title($_size, $_weight, $_mb: 1rem, $_mt: 1rem) {
+  font-size: $_size;
+  font-weight: $_weight;
+  font-family: Arial, Helvetica, sans-serif;
+  color: violet;
+  margin-bottom: $_mb;
+  margin-top: $_mt;
+}
+
+@mixin respondTo($_minWidth, $_maxWidth) {
+  @media (min-width: $_minWidth) and (max-width: $_max_width) {
+    @content;
+  }
+}
+
+@mixin media($_size) {
+  @media (min-width: $_size) {
+    @content;
+  }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz:700&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), 
+        url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 14px;
+}
+
+.fontlist {
+    list-style: none;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+}
+
+.size {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.simple {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    /* text-decoration: line-through; */
+    letter-spacing: 1px;
+    /* text-shadow: red 0 0 10px; */
+    text-transform: capitalize;
+}
+
+.complex span {
+    font-size: 1.6rem;
+}
+
+.more {
+    font-size: 2vw;
+}

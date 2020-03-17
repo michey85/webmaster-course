@@ -1,0 +1,38 @@
+.subscribtion {
+  background-color: #aaa;
+  width: 70%;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.subscribtion__field {
+  display: flex;
+}
+.subscribtion__field:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.subscribtion__field input {
+  flex-grow: 1;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+.subscribtion__field input {
+  border-bottom-color: yellowgreen;
+}
+.subscribtion__field input:invalid {
+  border-bottom-color: red;
+}
+.subscribtion__submit {
+  margin-top: 20px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+input[type="submit"]:disabled {
+  opacity: 0.5;
+}

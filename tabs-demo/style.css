@@ -1,0 +1,42 @@
+html {
+  font-size: 10px;
+}
+.tabs {
+  overflow: hidden;
+}
+.tab-head {
+  display: flex;
+}
+
+.tab-head__item {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.tab-head__item:hover,
+.tab-head__item.active {
+  border-bottom: 1px solid darkblue;
+}
+
+.tab-content {
+  position: relative;
+}
+
+.tab-content__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  transform: translateX(100px);
+
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.tab-content__item.active {
+  transition: all 250ms;
+  opacity: 1;
+  transform: translateX(0);
+  position: static;
+}

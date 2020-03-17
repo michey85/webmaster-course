@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.news__img {
+  max-width: 100%;
+  width: 500px;
+}
+
+@media (min-width: 767px) {
+  .news {
+    flex-direction: row;
+  }
+}

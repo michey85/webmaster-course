@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-transform: uppercase;
+    color:rgb(46, 160, 36);
+    text-align: center;
+}
+div {
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+.brown {
+    color: brown;
+}
+#heading {
+    border-bottom: 1px solid #000;
+}

@@ -1,0 +1,21 @@
+.flexorder {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.flex-inner {
+  width: 50px;
+  height: 40px;
+  background-color: brown;
+  margin: 5px;
+  padding: 5px;
+  order: 5;
+}
+
+.flex-inner:nth-child(4) {
+  order: 0;
+}
+.flex-inner:nth-child(2) {
+  order: 10;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Form basic</title>
+        <style>
+            textarea {
+                width: 300px;
+                height: 100px;
+                resize: vertical;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="sent.html" method="post">
+            <input type="text" placeholder="Введите ваше имя">
+            <input type="submit" value="Отправить">
+        </form>
+        <br>
+
+        <form method="get">
+            <input name="name" type="text" placeholder="Введите ваше имя">
+            <br>
+            <input name="pass" type="password" placeholder="Введите пароль">
+            <input type="submit" value="Отправить">
+        </form>
+        <br>
+
+
+        <input type="checkbox" name="condition" id="condition">Я принимаю условия соглашения
+        <br>
+        <br>
+
+        <input type="radio" name="option" value="JS" id="js"> <label for="js">JS</label>
+        <label>
+            <input type="radio" name="option" value="php"> PHP
+        </label>
+        <input type="radio" name="option" value="Python"> Python
+        <br>
+        <br>
+
+
+        <select name="select">
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+        </select>
+        <br>
+        <br>
+
+
+        <textarea name="textarea">Write something here</textarea>
+    </body>
+
+</html>

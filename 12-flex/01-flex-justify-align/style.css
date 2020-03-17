@@ -1,0 +1,21 @@
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategray;
+  height: 500px;
+}
+
+.flexbox > div {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: deeppink;
+}
+
+.flexbox > div:nth-child(3) {
+  align-self: stretch;
+}
+.flexbox > div:nth-child(4) {
+  align-self: flex-start;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .panel {
+                height: 100vh;
+                width: 100%;
+                padding: 5rem;
+            }
+
+            .panel.green {
+                margin-bottom: 400px
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+
+            .turqoise {
+                background-color: tomato;
+            }
+
+            .bordeaux {
+                background-color: brown;
+            }
+
+            .hat {
+                opacity: 0;
+                transition: opacity 0.2s;
+            }
+
+            .visible {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="panel blue">
+            <b>ONE</b>
+        </section>
+        <section class="panel turqoise">
+            <b>TWO</b>
+        </section>
+        <section class="panel green">
+            <b>THREE</b>
+            <div id="hat" class="hat">
+                <img src="https://scrollmagic.io/assets/img/demo_hat_front.png" alt="">
+            </div>
+        </section>
+        <section class="panel bordeaux">
+            <b>FOUR</b>
+        </section>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+
+</html>

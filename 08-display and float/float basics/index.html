@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Float Basics</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+            }
+
+            .wrapper {
+                background-color: dimgray;
+            }
+
+            .wrapper::after {
+                content: '';
+                clear: both;
+                display: block;
+            }
+
+            .wrapper>div {
+                width: 250px;
+                height: 250px;
+                background-color: darkorchid;
+                float: left;
+            }
+
+            .outside {
+                width: 250px;
+                height: 250px;
+                background-color: mediumturquoise;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Родитель не имеет тела при обтекании у детей. -->
+        <div class='wrapper'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="outside">5</div>
+    </body>
+
+</html>

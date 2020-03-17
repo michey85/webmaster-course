@@ -1,0 +1,139 @@
+/* Модальное окно */
+
+.modal {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_active {
+  display: block;
+}
+
+.modal__video {
+  margin: 0 auto;
+  display: block;
+}
+.modal__content {
+  background-color: #fff;
+  width: 80%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  margin: 5% auto 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  /* Для анимации */
+  position: relative;
+  animation-name: animaModal;
+  animation-duration: 0.4s;
+}
+
+@keyframes animaModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opasity: 1;
+  }
+}
+.modal__close {
+  cursor: pointer;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.modal__close:active,
+.modal__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Анимируем левую стрелочку */
+
+.slider__moveLeftActive {
+  animation: moveLeftActive 3s ease-in-out 0s 1 normal forwards;
+}
+.slider__moveLeftAfter {
+  animation: moveLeftAfter 3s ease-in-out 0s 1 normal forwards;
+}
+.slider__moveLeftAfter2 {
+  animation: moveLeftAfter2 3s ease-in-out 0s 1 normal forwards;
+}
+@keyframes moveLeftActive {
+  from {
+    left: 9.6rem;
+  }
+  to {
+    left: -191.4rem;
+  }
+}
+@keyframes moveLeftAfter {
+  from {
+    left: 110rem;
+  }
+  to {
+    left: 9.6rem;
+  }
+}
+@keyframes moveLeftAfter2 {
+  from {
+    left: 210rem;
+  }
+  to {
+    left: 110rem;
+  }
+}
+
+/* Анимируем правую стрелочку */
+
+.slider__moveRightBefore {
+  animation: moveRightBefore 3s ease-in-out 0s 1 normal forwards;
+}
+
+.slider__moveRightActive {
+  animation: moveRightActive 3s ease-in-out 0s 1 normal forwards;
+}
+
+.slider__moveRightAfter {
+  animation: moveRightAfter 3s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes moveRightBefore {
+  from {
+    left: -191.4rem;
+  }
+  to {
+    left: 9.6rem;
+  }
+}
+
+@keyframes moveRightActive {
+  from {
+    left: 9.6rem;
+  }
+  to {
+    left: 110rem;
+  }
+}
+
+@keyframes moveRightAfter {
+  from {
+    left: 110rem;
+  }
+  to {
+    left: 210rem;
+  }
+}

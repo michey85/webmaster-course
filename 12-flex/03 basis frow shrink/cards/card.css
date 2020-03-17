@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px 0px black;
+  margin-right: 10px;
+  flex-basis: 250px;
+}
+
+.card__title {
+}
+.card__text {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+.card__link {
+  text-decoration: none;
+}

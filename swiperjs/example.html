@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/97aaa665e3.js" crossorigin="anonymous"></script>
+        <title>Slider</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    </head>
+
+    <body>
+        <header style="padding-top: 2rem;">
+            <div class="wrapper header__bottom">
+                <div class="slider slider_position">
+                    <div class="slider__nav">
+                        <div class="slider__leftArrow oval"><i class="fas fa-chevron-left"></i></div>
+                        <div class="slider__rightArrow oval"><i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="sliderItems swiper-wrapper">
+                        <div class="sliderItem swiper-slide">
+                            <img class="sliderItem__image" src="./img/slide_man.jpg"></img>
+                            <div class="sliderItem__title">
+                                Scientific Methods and Research
+                            </div>
+                            <div class="sliderItem__subtitle">
+                                Julian Gruber
+                            </div>
+                            <div class="category category_science">1</div>
+                            <div class="price sliderItem__price_pos">
+                                $199
+                            </div>
+                            <div class="sliderItem__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="sliderItem swiper-slide">
+                            <img class="sliderItem__image" src="./img/slide_man.jpg"></img>
+                            <div class="sliderItem__title">
+                                Evolution of the Human Sociality
+                            </div>
+                            <div class="sliderItem__subtitle">
+                                Darika Samak
+                            </div>
+                            <div class="category category_human">2</div>
+                            <div class="price sliderItem__price_pos">
+                                $199
+                            </div>
+                            <div class="sliderItem__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="sliderItem swiper-slide">
+                            <img class="sliderItem__image" src="./img/slide_man.jpg"></img>
+                            <div class="sliderItem__title">
+                                Evolution of the Human Sociality
+                            </div>
+                            <div class="sliderItem__subtitle">
+                                Darika Samak
+                            </div>
+                            <div class="category category_human">3</div>
+                            <div class="price sliderItem__price_pos">
+                                $199
+                            </div>
+                            <div class="sliderItem__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="sliderItem swiper-slide">
+                            <img class="sliderItem__image" src="./img/slide_man.jpg"></img>
+                            <div class="sliderItem__title">
+                                Evolution of the Human Sociality
+                            </div>
+                            <div class="sliderItem__subtitle">
+                                Darika Samak
+                            </div>
+                            <div class="category category_human">4</div>
+                            <div class="price sliderItem__price_pos">
+                                $199
+                            </div>
+                            <div class="sliderItem__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.slider', {
+                direction: 'horizontal',
+                loop: true,
+                speed: 700,
+                spaceBetween: 100,
+                slidesPerView: "auto",
+
+                navigation: {
+                    nextEl: '.slider__rightArrow',
+                    prevEl: '.slider__leftArrow',
+                },
+            })
+        </script>
+    </body>
+
+</html>

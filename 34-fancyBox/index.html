@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FancyBox</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    </head>
+
+    <body>
+
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789871719">
+            <img src="https://placeimg.com/200/200/people?t=1581789871719">
+        </a>
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789872719">
+            <img src="https://placeimg.com/200/200/people?t=1581789872719">
+        </a>
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789873719">
+            <img src="https://placeimg.com/200/200/people?t=1581789873719">
+        </a>
+
+        <br>
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789871719">
+            <img src="https://placeimg.com/200/200/people?t=1581789871719">
+        </a>
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789872719">
+            <img src="https://placeimg.com/200/200/people?t=1581789872719">
+        </a>
+        <a data-fancybox="gallery" href="https://placeimg.com/640/480/people?t=1581789873719">
+            <img src="https://placeimg.com/200/200/people?t=1581789873719">
+        </a>
+
+        <br>
+        <a data-fancybox href="https://www.youtube.com/watch?v=gWai7fYp9PY">
+            See YouTube video
+        </a>
+        <br>
+        <a data-fancybox data-type="iframe"
+            data-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4490.209887973496!2d37.69933700254516!3d55.75667915746918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1581790321198!5m2!1sru!2sru"
+            href="javascript:;">
+            Map
+        </a>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script>
+            const config = {
+                loop: true,
+                infobar: false,
+                toolbar: false
+            };
+
+            $('[data-fancybox="gallery"]').fancybox(config);
+        </script>
+    </body>
+
+</html>

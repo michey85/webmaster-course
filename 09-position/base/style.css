@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  height: 2000px;
+}
+
+#parent {
+  position: relative;
+  top: 100px;
+  width: 300px;
+  height: 200px;
+  background: #29cc59;
+}
+
+#parent:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -40px;
+  width: 0;
+  height: 0;
+  border: 20px solid;
+  border-color: transparent transparent transparent black;
+}
+
+#child {
+  width: 100px;
+  height: 100px;
+  background: #cc5317;
+  position: absolute;
+  top: 15px;
+  left: 300px;
+}
+
+#fixed {
+  width: 100px;
+  height: 100px;
+  background: #716ccc;
+  position: fixed;
+  right: 100px;
+  top: 50px;
+}
+#sticky {
+  width: 100px;
+  height: 100px;
+  background: #ccc716;
+  position: sticky;
+  top: 40px;
+  right: 0px;
+  margin: 0 auto;
+}
+.black {
+  background: #000;
+  color: #fff;
+  z-index: 20;
+  position: relative;
+}

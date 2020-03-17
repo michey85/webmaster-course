@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead,
+tfoot {
+  background-color: burlywood;
+  text-align: center;
+}
+
+.header {
+  height: 100px;
+}
+
+.navbar {
+  background-color: darksalmon;
+  height: 40px;
+}
+
+tfoot > tr {
+  height: 100px;
+}
+
+.content {
+  width: 70%;
+  height: calc(100vh - 240px);
+  padding: 20px 15px;
+}
+
+.widget {
+  background-color: darkkhaki;
+  padding: 20px 15px;
+}
+
+.vertical-menu {
+  background-color: dimgrey;
+  width: 200px;
+}

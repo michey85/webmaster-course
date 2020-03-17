@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Range bar</title>
+        <meta name="description" content="">
+        <style>
+            progress,
+            meter {
+                display: block;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .progress-container {
+                width: 300px;
+                height: 10px;
+                background-color: grey;
+                border-radius: 5px;
+                border: 1px solid black;
+                overflow: hidden;
+            }
+
+            .progress-content {
+                height: 100%;
+                background-color: chartreuse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form oninput="result.value=myRange.value">
+            <input type="range" name="myRange" id="myRange" step="2" min="0" max="10" value="0">
+
+            <output name="result" for="myRange">0</output>
+
+            <progress name="result2" for="myRange" max="10" value="4"></progress>
+            <meter min="0" max="100" low="33" high="66" optimum="80" value="66"></meter>
+
+            <div class="progress-container">
+                <div class="progress-content" style="width:65%"></div>
+            </div>
+        </form>
+    </body>
+
+</html>

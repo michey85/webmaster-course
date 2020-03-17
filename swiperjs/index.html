@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SwiperJS</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <style>
+            .swiper-container {
+                width: 1200px;
+                height: 300px;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-color: rosybrown;">Slide 1</div>
+                <div class="swiper-slide" style="background-color: brown;">Slide 2</div>
+                <div class="swiper-slide" style="background-color: teal;">Slide 3</div>
+                <div class="swiper-slide" style="background-color: firebrick;">Slide 4</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                speed: 400,
+                spaceBetween: 100,
+                slidesPerView: 2,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 70
+                    }
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        </script>
+    </body>
+
+</html>

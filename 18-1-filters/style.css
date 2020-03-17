@@ -1,0 +1,19 @@
+img {
+  transition: 1s;
+}
+
+img:hover {
+  /* filter: blur(5px); */
+  /* filter: brightness(0.8); */
+  /* filter: contrast(200%); */
+  /* filter: drop-shadow(16px 16px 20px blue); */
+  /* filter: grayscale(1); */
+  /* filter: hue-rotate(140deg); */
+  /* filter: invert(75%); */
+  /* filter: opacity(25%); */
+  /* filter: saturate(230%); */
+  /* filter: sepia(0.5); */
+
+  /* Применение нескольких фильтров */
+  filter: contrast(175%) brightness(80%);
+}

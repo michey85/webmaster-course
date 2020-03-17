@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DOM Events</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 id='h1'>События в браузере</h1>
+        <hr>
+        <h2>Типы событий</h2>
+        <ul onclick="checkTarget(event)">
+            <li><b>click</b> - нажатие левой клавиши мыши</li>
+            <li><b>mouseover / mouseout</b> - мыщи наводится на (покидает) элемент </li>
+            <li><b>keydown / keyup</b> - нажатие / отпускание клавиши клавиатуры</li>
+            <li><b>focus</b> - установка фокуса на элементе, например, input</li>
+            <li><b>submit</b> - событие отправки формы</li>
+            <li>...</li>
+        </ul>
+
+        <br>
+        <br>
+        <h2>Обработка события</h2>
+        <ul>
+            <li onclick="alertMsg()">Через атрибут тега - onevent (например, onclick, onmouseover,
+                onsubmit)</li>
+            <li id='test1'>Вызов колбэка</li>
+            <li>Выборка ноды и добавление к ней события onevent (по ссылке)</li>
+            <li>Использование "листнеров" addEventListener, removeEventListener</li>
+        </ul>
+        <br>
+        <br>
+        <h2>Доступ к содержимому ноды</h2>
+        <ul>
+            <li>Через контекст this</li>
+            <li>Через объект события</li>
+        </ul>
+
+        <script>
+            // const li = document.getElementById('test1');
+            // li.addEventListener('click', alertMsg);
+            // li.addEventListener('click', alertMsg);
+
+            // function alertMsg() {
+            //     alert('Привет из функции.')
+            // }
+            function checkTarget(event) {
+                event.preventDefault();
+                console.log(event);
+                console.log(event.target);
+                console.log(event.currentTarget);
+                // console.log(this.innerHTML);
+            }
+
+            // var heading = document.getElementById('h1');
+            // heading.onclick = function () {
+            //     console.log(this);
+            //     this.classList.toggle('active');
+            // }
+        </script>
+    </body>
+
+</html>

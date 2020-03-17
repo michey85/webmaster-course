@@ -1,0 +1,11 @@
+img {
+  transition: all 1s ease-in;
+  transform: perspective(300px);
+  /* transform-origin: bottom right; */
+  backface-visibility: hidden;
+}
+img:hover {
+  /* transform: perspective(300px) rotateY(45deg);
+   */
+  transform: perspective(300px) rotateY(180deg);
+}

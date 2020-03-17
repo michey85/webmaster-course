@@ -1,0 +1,26 @@
+.small-image {
+    width: 200px;
+    height: 300px;
+    background-color: black;
+}
+.small-image > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.pic > * {
+    max-width: 300px;
+}
+
+.fa-align-justify {
+    font-size: 50px;
+    color: darkolivegreen;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 100px;
+}

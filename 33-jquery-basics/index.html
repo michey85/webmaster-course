@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jquery basics</title>
+    </head>
+
+    <body>
+        <h1 class="h1">jquery basics</h1>
+
+        <button id="btn">click me</button>
+
+        <button id="collapleBtn">click me too</button>
+
+        <div class="collapse" style="display: none;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sit!
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script>
+            const heading = $('.h1');
+            heading.css({
+                'text-transform': 'uppercase',
+                'color': 'blue'
+            });
+
+
+            $('#btn').on('click', () => {
+                heading.toggleClass('active');
+            })
+
+
+            $('#collapleBtn').on('click', () => {
+                $('.collapse').fadeToggle();
+            });
+
+
+        </script>
+    </body>
+
+</html>
